@@ -38,13 +38,16 @@
 
 /* Global */
 body {
-  min-width: var(--mobile_size);
   padding: 0px;
   margin: 0px auto;
+
+  display: flex;
+
   font-family: "Euclid Circular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+
   color: var(--basic_neutral_blue);
   background-color: var(--basic_white);
 
@@ -123,7 +126,8 @@ html {
 }
 
 .main_page {
-
+  margin: 0 auto;
+  width: var(--mobile_size);
 }
 
 /* ==========> ABOUT SECTION <============== */
@@ -195,10 +199,6 @@ input[type="radio"]:checked + .about__language_label::after {
   margin-bottom: 12px;
 }
 
-.about__brief_logo {
-
-}
-
 .about__brief_details {
   padding: 0;
   margin: 0;
@@ -239,6 +239,15 @@ input[type="radio"]:checked + .about__language_label::after {
   background-color: var(--basic_white);
   box-shadow: 6px 4px 12px rgba(var(--tech_black_rgb), 0.05);
   border-radius: 20px;
+
+}
+
+.advantage_item__text {
+  margin: 0;
+  height: 61px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .advantage_item::before {
@@ -284,5 +293,101 @@ input[type="radio"]:checked + .about__language_label::after {
 .advantage_item:nth-of-type(4)::after {
   content: "\e800";
 }
+
+/* ==========> PRODUCT SECTION <============== */
+
+.products {
+  padding: 0 16px;
+}
+
+.products__title {
+  margin: 40px 0 24px;
+
+  font-size: 24px;
+  line-height: 31px;
+
+  text-align: center;
+}
+
+.products__title_highlight {
+  color: var(--basic_blue);
+}
+
+.products__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.products__item {
+  padding: 25px 20px 0 16px;
+  margin-bottom: 16px;
+  height: 215px;
+
+  display: grid;
+  grid-template-columns: 162px 142px;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "title picture"
+    "text picture"
+    ". picture";
+  gap: 4px;
+}
+
+.item_info {
+  background-color: var(--special_pale_blue);
+  border-radius: 30px;
+}
+
+.item_info__title {
+  margin: 0;
+  padding: 0;
+
+  grid-area: title;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-info__content {
+  margin: 0;
+  grid-area: text;
+
+  font-size: 13px;
+  line-height: 18px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-info__image_wrapper {
+  grid-area: picture;
+}
+
+.item-info__image {
+  object-fit: cover;
+
+  box-shadow: 8px -8px 16px rgba(var(--tech_black_rgb), 0.06);
+  border-radius: 15px 15px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
