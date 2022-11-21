@@ -52,10 +52,7 @@
 }
 
 .icon_gear:before { content: '\e800'; } /* '' */
-.icon_gold:before { content: '\e801'; } /* '' */
 .icon_graph:before { content: '\e802'; } /* '' */
-.icon_heart:before { content: '\e803'; } /* '' */
 .icon_pie:before { content: '\e804'; } /* '' */
 .icon_tools:before { content: '\e805'; } /* '' */
-.icon_user_spin:before { content: '\e806'; } /* '' */
-.icon_vice_versa:before { content: '\e807'; } /* '' */
+
